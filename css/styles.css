@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kameron:wght@400..700&family=Khula:wght@300;400;600;700;800&display=swap&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Fondo  y tipografia*/
+body {
+    background-color: rgba(255, 255, 255, 0.768);
+    color: black;
+    font-family: "Khula", sans-serif;
+
+}
+
+/*Encabezado*/
+header {
+    font-style: initial;
+    background-color: #61d9fb;
+    padding: 20px;
+    border-bottom: solid;
+    align-items: center;
+
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 70px;
+    padding-left: 20px;
+}
+
+header nav {
+    font-family: "Oswald", sans-serif;
+}
+
+
+
+
+main img {
+    width: 100%;
+}
+
+header ul {
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+
+/*Beneificios pag inicio/productos*/
+.beneficios {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-family: "Khula", sans-serif;
+    border-bottom: solid;
+    background-color: whitesmoke;
+}
+
+.beneficios h3 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.beneficios img {
+    margin-top: 20px;
+    width: 50%;
+    height: 35vh;
+}
+
+/*imagen grande pag inicio*/
+.imggrande {
+    text-align: center;
+}
+
+/*Categorias pag inicio*/
+.categorias {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.categorias h2 {
+    padding: 20px;
+    font-size: 50px;
+    font-family: "Kameron", serif;
+    font-weight: bold;
+}
+
+
+
+.categorias button {
+    font-size: 80%;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.categorias a {
+    color: black;
+    text-decoration: none;
+}
+
+.categorias button :active {
+    background-color: #61d9fb
+}
+
+/*Buscador de producto*/
+.buscador {
+    padding: 20px;
+    text-align: center;
+    font-family: "Kameron", serif;
+}
+
+.buscador h2 {
+    border-top-color: white;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*servicios*/
+.servicios h2 {
+    padding: 20px;
+    text-align: center;
+    font-family: "Kameron", serif;
+    border-top-style: solid;
+    font-weight: bold;
+}
+
+.servicios div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Khula", sans-serif;
+    line-height: 2;
+}
+
+.servicios button {
+    background-color: #61d9fb;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.servicios a {
+    color: black;
+    text-decoration: none;
+}
+
+.servicios article {
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.servicios article :hover {
+    font-weight: bold;
+}
+
+/*productos*/
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    text-align: center;
+    padding: 40px;
+    font-family: "Kameron", serif;
+}
+
+.productos article {
+    width: 20rem;
+}
+
+.productos article :hover {
+    font-weight: bold;
+}
+
+.productos button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #61d9fb;
+    font-weight: 200;
+    font-family: "Kameron", serif;
+}
+
+
+.productos h3 {
+    border-top: solid;
+    padding: 20px;
+}
+
+
+.productos p {
+    border-style: solid;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.productos img {
+    width: 100%;
+    height: 45vh;
+}
+
+/*Filtro de productos*/
+.filtro {
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    display: inline-table;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 10px;
+    font-family: "Khula", sans-serif;
+}
+
+.filtro ul {
+    list-style: none;
+    text-align: left;
+    margin-right: 30px;
+}
+
+/*Quienes somos*/
+.quienessomos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 40px;
+    background-image: url(../assets/imagen-apple.png);
+    background-position: center
+}
+
+.quienessomos h2 {
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    text-orientation: sideways;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-family: "Kameron", serif;
+    ;
+
+}
+
+.quienessomos p {
+    font-size: larger;
+    font-family: serif;
+    text-align: center;
+    font-family: "Khula", sans-serif;
+
+}
+
+.quienessomos img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Equipo*/
+.conoce {
+    text-align: center;
+    margin-bottom: 70px;
+    border-style: groove;
+    border-bottom: none;
+    padding-top: 40px;
+    font-family: "Kameron", serif;
+    ;
+
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-family: "Khula", sans-serif;
+}
+
+.equipo article {
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    align-items: center;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.equipo img {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+
+/*Contacto*/
+
+.pagcontac {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 3;
+}
+
+.contacto {
+    text-align: center;
+    border-style: solid;
+    margin-left: 40px;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 40px;
+    line-height: 4;
+
+}
+
+.contacto h2 {
+    font-family: "Kameron", serif;
+    ;
+    font-weight: bold;
+}
+
+.contacto p {
+    font-family: "Khula", sans-serif;
+}
+
+.contacto img {
+    width: 100%;
+    height: 30vh;
+}
+
+/*Redes*/
+.redes {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.redes h2 {
+    font-family: "Kameron", serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.redes div {
+    font-family: "Khula", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.redes img {
+    width: 80%;
+    height: 20vh;
+}
+
+/*Mensaje*/
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 40px;
+
+}
+
+.mensaje h2 {
+    padding-bottom: 20px;
+    font-family: "Kameron", serif;
+    font-weight: bold;
+}
+
+.formulario {
+    font-family: "Khula", sans-serif;
+}
+
+.boton {
+    background-color: #61d9fb;
+}
+
+/*Preguntas frecuentes*/
+.preguntasfrecuentes {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Khula", sans-serif;
+    font-weight: bold;
+}
+
+.pregunta {
+    margin-left: 20px;
+    color: red;
+    font-family: "Kameron", serif;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 2;
+}
+
+.respuesta {
+    margin-left: 20px;
+    font-family: "Khula", sans-serif
+}
+
+.input {
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Khula", sans-serif;
+}
+
+/*pie de pagina*/
+footer {
+    margin-top: 30px;
+    background-color: rgb(165, 164, 164);
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    writing-mode: horizontal-tb;
+    font-family: "Oswald", sans-serif;
+    border-top: solid;
+}
+
+footer h3 {
+    text-align: center;
+    line-height: 2;
+}
+
+.apps {
+    display: flex;
+    gap: 20px;
+}
+
+.apps img {
+    width: 100%;
+    height: 8vh;
+}
+
+/*Adaptacion responsive*/
+
+@media (max-width: 660px) {
+    header {
+        padding: 0%;
+    }
+
+    header h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .categorias h2 {
+        font-size: 30px;
+    }
+
+    .buscador h2 {
+        font-size: 30px;
+    }
+
+    .productos h3 {
+        font-size: 15px;
+    }
+
+    .precios {
+        font-size: 15px;
+    }
+
+    .servicios div {
+        flex-direction: column;
+    }
+
+    .servicios article {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .quienessomos {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        padding: 20px;
+    }
+
+    .quienessomos h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .quienessomos p {
+        font-size: smaller;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .quienessomos img {
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 50vh;
+    }
+
+    .equipo {
+        flex-direction: column;
+    }
+
+    .equipo article {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .equipo img {
+        height: 90vh;
+    }
+
+    .pagcontac {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        margin-bottom: 20px;
+        margin-left: 0px;
+
+    }
+
+    .redes {
+        margin-bottom: 20px;
+    }
+
+    .mensaje {
+        margin-right: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
