@@ -4,25 +4,22 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 /*Fondo  y tipografia*/
 body {
-    background-color: rgba(255, 255, 255, 0.768);
+    background-color: rgb(247, 249, 249);
     color: black;
     font-family: "Khula", sans-serif;
-
 }
 
 /*Encabezado*/
 header {
     font-style: initial;
-    background-color: #61d9fb;
     padding: 20px;
+
     border-bottom: solid;
     align-items: center;
-
 }
 
 header a {
@@ -37,6 +34,8 @@ header h1 {
 
 header nav {
     font-family: "Oswald", sans-serif;
+    background-color: rgb(193, 238, 255);
+    border-radius: 20px;
 }
 
 
@@ -65,7 +64,6 @@ header ul {
     text-align: center;
     font-family: "Khula", sans-serif;
     border-bottom: solid;
-    background-color: whitesmoke;
 }
 
 .beneficios h3 {
@@ -147,7 +145,7 @@ header ul {
 }
 
 .servicios button {
-    background-color: #61d9fb;
+    background-color: rgba(17, 19, 68, 0.7);
     padding: 10px;
     border-radius: 20px;
 
@@ -181,16 +179,19 @@ header ul {
 
 .productos article {
     width: 20rem;
+    border-radius: 20px;
+    background-color: rgb(193, 238, 255);
 }
 
 .productos article :hover {
     font-weight: bold;
+
 }
 
 .productos button {
     border-radius: 20px;
     padding: 10px;
-    background-color: #61d9fb;
+    background-color: rgb(17, 19, 68, 0.7);
     font-weight: 200;
     font-family: "Kameron", serif;
 }
@@ -206,11 +207,14 @@ header ul {
     border-style: solid;
     padding: 10px;
     font-weight: bold;
+
 }
 
 .productos img {
     width: 100%;
     height: 45vh;
+    border-radius: 20px;
+
 }
 
 /*Filtro de productos*/
@@ -250,8 +254,6 @@ header ul {
     margin-left: 20px;
     margin-right: 50px;
     font-family: "Kameron", serif;
-    ;
-
 }
 
 .quienessomos p {
