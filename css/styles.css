@@ -68,7 +68,6 @@ header ul {
 
 .beneficios img {
     margin-top: 20px;
-    width: 50%;
     height: 35vh;
 }
 
@@ -267,7 +266,7 @@ header ul {
     border-bottom: none;
     padding-top: 40px;
     font-family: "Kameron", serif;
-    ;
+    font-weight: bold;
 
 }
 
@@ -304,7 +303,7 @@ header ul {
 .pagcontac {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 20px;
@@ -319,7 +318,7 @@ header ul {
     border-radius: 20px;
     padding: 30px;
     padding-top: 40px;
-    line-height: 4;
+    line-height: 2;
 
 }
 
@@ -336,18 +335,19 @@ header ul {
 .contacto img {
     width: 100%;
     height: 30vh;
+    border: solid;
+    color: black;
+    border-radius: 20px;
 }
 
 /*Redes*/
 .redes {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-style: solid;
     border-radius: 20px;
     padding: 20px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .redes h2 {
@@ -363,7 +363,7 @@ header ul {
 }
 
 .redes img {
-    width: 80%;
+    width: 100%;
     height: 20vh;
 }
 
