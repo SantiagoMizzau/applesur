@@ -91,12 +91,22 @@
             <!--Filtro de productos -->
             <div class="filtro">
                 <h4>FILTRO</h4>
-                <ul>
-                    <li><input type="checkbox">Precio mas alto al mas bajo</li>
-                    <li><input type="checkbox">Precio mas bajo al mas alto</li>
-                    <li><input type="checkbox">Mas populares</li>
-                    <li><input type="checkbox">Mas recientes</li>
-                </ul>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                    <label class="form-check-label" for="switchCheckDefault">Precio mas alto al mas bajo</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+                    <label class="form-check-label" for="switchCheckChecked">Precio mas bajo al mas alto</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+                    <label class="form-check-label" for="switchCheckChecked">Mas populares</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+                    <label class="form-check-label" for="switchCheckChecked">Mas recientes</label>
+                </div>
             </div>
         </section>
         <section>
