@@ -472,7 +472,6 @@ footer h3 {
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 30px;
-        text-align: center;
     }
 
     .categorias h2 {
@@ -484,7 +483,7 @@ footer h3 {
     }
 
     .productos h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .precios {
