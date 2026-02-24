@@ -1,0 +1,488 @@
+@use "variables" as *;
+@use "header-footer" as *;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Beneificios pag inicio/productos*/
+.beneficios {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-family: $tipografia-general;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+.beneficios h3 {
+    font-weight: bold;
+}
+
+.beneficios img {
+    margin-top: 20px;
+    height: 35vh;
+}
+
+/*imagen grande pag inicio*/
+.imggrande {
+    text-align: center;
+}
+
+/*Categorias pag inicio*/
+.categorias {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.categorias h2 {
+    padding: 20px;
+    font-size: 50px;
+    font-family: $tipografia-titulos;
+    font-weight: bold;
+}
+
+
+
+.categorias button {
+    font-size: 80%;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.categorias a {
+    color: black;
+    text-decoration: none;
+}
+
+.categorias button :active {
+    background-color: $color-logo
+}
+
+/*servicios*/
+.servicios {
+    h2 {
+        padding: 20px;
+        text-align: center;
+        font-family: $tipografia-titulos;
+        border-top-style: solid;
+        font-weight: bold;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-family: $tipografia-general;
+        line-height: 2;
+    }
+
+    button {
+        @extend .boton;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    article {
+        border-style: solid;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    article :hover {
+        font-weight: bold;
+    }
+}
+
+/*Buscador de producto*/
+.buscador {
+    padding: 20px;
+    text-align: center;
+    font-family: $tipografia-titulos;
+
+    h2 {
+        padding-bottom: 20px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+
+/*productos*/
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    text-align: center;
+    padding: 40px;
+    font-family: $tipografia-titulos;
+
+    article {
+        width: 20rem;
+        border-radius: 20px;
+        background-color: $color-logo;
+    }
+
+    article :hover {
+        font-weight: bold;
+    }
+
+    button {
+        border-radius: 20px;
+        padding: 10px;
+        @extend .boton;
+        font-family: $tipografia-titulos;
+
+    }
+
+    h3 {
+        border-top: solid;
+        padding: 20px;
+    }
+
+    p {
+        border-style: solid;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        height: 45vh;
+        border-radius: 20px;
+    }
+}
+
+/*Filtro de productos*/
+.filtro {
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    display: inline-table;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 10px;
+    font-family: $tipografia-general;
+}
+
+/*Quienes somos*/
+.quienessomos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 40px;
+    background-image: url(../assets/imagen-apple.png);
+    background-position: center;
+
+    h2 {
+        writing-mode: horizontal-tb;
+        white-space: nowrap;
+        text-orientation: sideways;
+        margin-left: 20px;
+        margin-right: 50px;
+        font-family: $tipografia-titulos;
+    }
+
+    p {
+        font-size: larger;
+        text-align: center;
+        font-family: $tipografia-general;
+
+    }
+
+    img {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+/*Equipo*/
+.conoce {
+    text-align: center;
+    margin-bottom: 70px;
+    border-style: groove;
+    border-bottom: none;
+    padding-top: 40px;
+    font-family: "Kameron", serif;
+    font-weight: bold;
+
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-family: $tipografia-titulos;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+        align-items: center;
+        border-style: solid;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: $color-logo;
+    }
+
+    article :hover {
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Contacto*/
+
+.pagcontac {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 3;
+}
+
+.contacto {
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 30px;
+    margin-left: 40px;
+    line-height: 2;
+
+    h2 {
+        font-family: $tipografia-titulos;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: $tipografia-general;
+    }
+
+    img {
+        width: 100%;
+        height: 30vh;
+        border: solid;
+        color: black;
+        border-radius: 20px;
+    }
+}
+
+
+/*Redes*/
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 30px;
+
+    h2 {
+        font-family: $tipografia-titulos;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div {
+        font-family: $tipografia-general;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+/*Mensaje*/
+.mensaje {
+    @extend .redes;
+    margin-right: 40px;
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: $tipografia-titulos;
+        font-weight: bold;
+    }
+
+}
+
+.formulario {
+    font-family: $tipografia-general;
+}
+
+.boton {
+    background-color: $fondo-botones;
+    color: white;
+}
+
+/*Preguntas frecuentes*/
+.preguntasfrecuentes {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $tipografia-general;
+    font-weight: bold;
+}
+
+.pregunta {
+    margin-left: 20px;
+    color: red;
+    font-family: $tipografia-titulos;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 2;
+}
+
+.respuesta {
+    margin-left: 20px;
+    font-family: $tipografia-general;
+}
+
+.input {
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: $tipografia-general;
+}
+
+.enviar {
+    background-color: rgba(84, 106, 123);
+    color: white;
+}
+
+/*Adaptacion responsive*/
+
+@media (max-width: 660px) {
+    header {
+        padding: 0%;
+    }
+
+    header h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .categorias h2 {
+        font-size: 30px;
+    }
+
+    .buscador h2 {
+        font-size: 30px;
+    }
+
+    .productos h3 {
+        font-size: 20px;
+    }
+
+    .precios {
+        font-size: 15px;
+    }
+
+    .servicios div {
+        flex-direction: column;
+    }
+
+    .servicios article {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .quienessomos {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        padding: 20px;
+    }
+
+    .quienessomos h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .quienessomos p {
+        font-size: smaller;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .quienessomos img {
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 50vh;
+    }
+
+    .equipo {
+        flex-direction: column;
+    }
+
+    .equipo article {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .equipo img {
+        height: 90vh;
+    }
+
+    .pagcontac {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        margin-bottom: 20px;
+        margin-left: 0px;
+
+    }
+
+    .redes {
+        margin-bottom: 20px;
+    }
+
+    .mensaje {
+        margin-right: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
