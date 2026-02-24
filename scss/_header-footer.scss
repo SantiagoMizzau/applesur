@@ -48,17 +48,15 @@ footer {
     margin-top: 30px;
     background-color: rgba(165, 164, 164, 0.816);
     padding: 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    @include flexbox (flex, none, nowrap, none, space-between, center);
     writing-mode: horizontal-tb;
     font-family: $tipografia-header-footer;
     border-top: solid;
-    align-items: center;
+
 }
 
 footer h3 {
-    text-align: center;
+    @extend .texto-centro;
     line-height: 2;
 }
 

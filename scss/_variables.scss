@@ -5,3 +5,20 @@ $tipografia-titulos: "Kameron", serif;
 $fondo-botones: rgba(84, 106, 123);
 $fondo: rgb(247, 249, 249);
 $color-logo: rgb(193, 238, 255);
+
+.negrita {
+    font-weight: bold;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+@mixin flexbox ($display, $flex-direction, $flex-wrap, $align-content, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    align-content: $align-content;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

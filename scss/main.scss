@@ -8,19 +8,19 @@
 }
 
 
+
 /*Beneificios pag inicio/productos*/
 .beneficios {
-    display: flex;
-    justify-content: center;
+    @include flexbox (flex, none, none, none, center, none);
     padding: 20px;
-    text-align: center;
+    @extend .texto-centro;
     font-family: $tipografia-general;
     border-bottom: solid;
     border-top: solid;
 }
 
 .beneficios h3 {
-    font-weight: bold;
+    @extend .negrita
 }
 
 .beneficios img {
@@ -28,14 +28,9 @@
     height: 35vh;
 }
 
-/*imagen grande pag inicio*/
-.imggrande {
-    text-align: center;
-}
-
 /*Categorias pag inicio*/
 .categorias {
-    text-align: center;
+    @extend .texto-centro;
     margin-bottom: 30px;
     padding: 20px;
 }
@@ -44,7 +39,7 @@
     padding: 20px;
     font-size: 50px;
     font-family: $tipografia-titulos;
-    font-weight: bold;
+    @extend .negrita
 }
 
 
@@ -68,16 +63,14 @@
 .servicios {
     h2 {
         padding: 20px;
-        text-align: center;
+        @extend .texto-centro;
         font-family: $tipografia-titulos;
         border-top-style: solid;
-        font-weight: bold;
+        @extend .negrita;
     }
 
     div {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        @include flexbox(flex, row, none, none, space-around, none);
         font-family: $tipografia-general;
         line-height: 2;
     }
@@ -100,33 +93,31 @@
     }
 
     article :hover {
-        font-weight: bold;
+        @extend .negrita
     }
 }
 
 /*Buscador de producto*/
 .buscador {
     padding: 20px;
-    text-align: center;
+    @extend .texto-centro;
     font-family: $tipografia-titulos;
 
     h2 {
         padding-bottom: 20px;
         font-size: 50px;
-        font-weight: bold;
+        @extend .negrita
     }
 }
 
 
 /*productos*/
 .productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     gap: 50px;
-    text-align: center;
+    @extend .texto-centro;
     padding: 40px;
     font-family: $tipografia-titulos;
+    @include flexbox (flex, none, wrap, none, space-around, none);
 
     article {
         width: 20rem;
@@ -135,7 +126,7 @@
     }
 
     article :hover {
-        font-weight: bold;
+        @extend .negrita
     }
 
     button {
@@ -154,7 +145,7 @@
     p {
         border-style: solid;
         padding: 10px;
-        font-weight: bold;
+        @extend .negrita
     }
 
     img {
@@ -166,7 +157,7 @@
 
 /*Filtro de productos*/
 .filtro {
-    text-align: center;
+    @extend .texto-centro;
     border-color: black;
     border-style: solid;
     border-radius: 20px;
@@ -180,13 +171,10 @@
 
 /*Quienes somos*/
 .quienessomos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
     padding: 40px;
     background-image: url(../assets/imagen-apple.png);
     background-position: center;
+    @include flexbox (flex, none, nowrap, none, space-between, center);
 
     h2 {
         writing-mode: horizontal-tb;
@@ -199,7 +187,7 @@
 
     p {
         font-size: larger;
-        text-align: center;
+        @extend .texto-centro;
         font-family: $tipografia-general;
 
     }
@@ -214,35 +202,31 @@
 
 /*Equipo*/
 .conoce {
-    text-align: center;
+    @extend .texto-centro;
     margin-bottom: 70px;
     border-style: groove;
     border-bottom: none;
     padding-top: 40px;
     font-family: $tipografia-titulos;
-    font-weight: bold;
-
+    @extend .negrita
 }
 
 .equipo {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 50px;
     font-family: $tipografia-titulos;
+    @include flexbox (flex, none, none, none, space-around, none);
 
     article {
-        display: flex;
-        flex-direction: column;
         line-height: 3;
-        align-items: center;
         border-style: solid;
         padding: 40px;
         border-radius: 20px;
         background-color: $color-logo;
+        @include flexbox (flex, column, none, none, none, center);
     }
 
     article :hover {
-        font-weight: bold;
+        @extend .negrita
     }
 
     img {
@@ -256,18 +240,14 @@
 /*Contacto*/
 
 .pagcontac {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    @include flexbox (flex, row, nowrap, none, space-between, stretch);
     margin-top: 20px;
     padding: 20px;
     line-height: 3;
 }
 
 .contacto {
-    text-align: center;
+    @extend .texto-centro;
     border-style: solid;
     border-radius: 20px;
     padding: 30px;
@@ -277,7 +257,7 @@
 
     h2 {
         font-family: $tipografia-titulos;
-        font-weight: bold;
+        @extend .negrita
     }
 
     p {
@@ -296,18 +276,16 @@
 
 /*Redes*/
 .redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-style: solid;
     border-radius: 20px;
     padding: 30px;
     padding-top: 30px;
+    @include flexbox (flex, column, none, none, none, center);
 
     h2 {
         font-family: $tipografia-titulos;
-        text-align: center;
-        font-weight: bold;
+        @extend .texto-centro;
+        @extend .negrita
     }
 
     div {
@@ -330,7 +308,7 @@
     h2 {
         padding-bottom: 20px;
         font-family: $tipografia-titulos;
-        font-weight: bold;
+        @extend .negrita
     }
 
 }
@@ -346,18 +324,18 @@
 
 /*Preguntas frecuentes*/
 .preguntasfrecuentes {
-    text-align: center;
+    @extend .texto-centro;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: $tipografia-general;
-    font-weight: bold;
+    @extend .negrita
 }
 
 .pregunta {
     margin-left: 20px;
     color: red;
     font-family: $tipografia-titulos;
-    font-weight: bold;
+    @extend .negrita;
     margin-left: 50px;
     line-height: 2;
 }
@@ -370,7 +348,7 @@
 .input {
     border-style: solid;
     border-radius: 20px;
-    text-align: center;
+    @extend .texto-centro;
     padding: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -387,6 +365,7 @@
 @media (max-width: 660px) {
     header {
         padding: 0%;
+        margin: 10px;
     }
 
     header h1 {
@@ -422,8 +401,7 @@
     }
 
     .quienessomos {
-        flex-direction: column;
-        align-items: center;
+        @include flexbox (flex, column, nowrap, none, space-between, center);
         background-image: none;
         padding: 20px;
     }
@@ -444,7 +422,7 @@
     .quienessomos img {
         margin-top: 20px;
         margin-left: 0px;
-        height: 50vh;
+        height: 40vh;
     }
 
     .equipo {
@@ -458,7 +436,8 @@
     }
 
     .equipo img {
-        height: 90vh;
+        height: 80vh;
+        width: 90%;
     }
 
     .pagcontac {
