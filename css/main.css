@@ -56,9 +56,7 @@ footer {
   background-color: rgba(165, 164, 164, 0.816);
   padding: 30px;
   display: flex;
-  flex-direction: none;
   flex-wrap: nowrap;
-  align-content: none;
   justify-content: space-between;
   align-items: center;
   writing-mode: horizontal-tb;
@@ -87,11 +85,7 @@ footer h3 {
 /*Beneificios pag inicio/productos*/
 .beneficios {
   display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  align-content: none;
   justify-content: center;
-  align-items: none;
   padding: 20px;
   font-family: "Khula", sans-serif;
   border-bottom: solid;
@@ -105,7 +99,7 @@ footer h3 {
 
 /*Categorias pag inicio*/
 .categorias {
-  margin-bottom: 30px;
+  margin-bottom: 30xp;
   padding: 20px;
 }
 
@@ -139,10 +133,7 @@ footer h3 {
 .servicios div {
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
-  align-content: none;
   justify-content: space-around;
-  align-items: none;
   font-family: "Khula", sans-serif;
   line-height: 2;
 }
@@ -175,11 +166,8 @@ footer h3 {
   padding: 40px;
   font-family: "Kameron", serif;
   display: flex;
-  flex-direction: none;
   flex-wrap: wrap;
-  align-content: none;
   justify-content: space-around;
-  align-items: none;
 }
 .productos article {
   width: 20rem;
@@ -211,7 +199,7 @@ footer h3 {
   border-style: solid;
   border-radius: 20px;
   display: inline-table;
-  margin-bottom: 30px;
+  margin-bottom: 30xp;
   margin-left: 20px;
   padding: 5px;
   font-size: 10px;
@@ -224,9 +212,7 @@ footer h3 {
   background-image: url(../assets/imagen-apple.png);
   background-position: center;
   display: flex;
-  flex-direction: none;
   flex-wrap: nowrap;
-  align-content: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -254,7 +240,7 @@ footer h3 {
   margin-bottom: 70px;
   border-style: groove;
   border-bottom: none;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: "Kameron", serif;
 }
 
@@ -262,11 +248,7 @@ footer h3 {
   margin-bottom: 50px;
   font-family: "Kameron", serif;
   display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  align-content: none;
   justify-content: space-around;
-  align-items: none;
 }
 .equipo article {
   line-height: 3;
@@ -275,11 +257,8 @@ footer h3 {
   border-radius: 20px;
   background-color: rgb(193, 238, 255);
   display: flex;
-  flex-direction: column;
-  flex-wrap: none;
-  align-content: none;
-  justify-content: none;
   align-items: center;
+  flex-direction: column;
 }
 .equipo img {
   width: 100%;
@@ -292,7 +271,6 @@ footer h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-content: none;
   justify-content: space-between;
   align-items: stretch;
   margin-top: 20px;
@@ -303,8 +281,8 @@ footer h3 {
 .contacto {
   border-style: solid;
   border-radius: 20px;
-  padding: 30px;
-  padding-top: 30px;
+  padding: 40px;
+  padding-top: 30xp;
   margin-left: 40px;
   line-height: 2;
 }
@@ -326,13 +304,10 @@ footer h3 {
 .redes, .mensaje {
   border-style: solid;
   border-radius: 20px;
-  padding: 30px;
-  padding-top: 30px;
+  padding: 40px;
+  padding-top: 30xp;
   display: flex;
   flex-direction: column;
-  flex-wrap: none;
-  align-content: none;
-  justify-content: none;
   align-items: center;
 }
 .redes h2, .mensaje h2 {
@@ -389,7 +364,7 @@ footer h3 {
 .input {
   border-style: solid;
   border-radius: 20px;
-  padding: 20px;
+  padding: 70px;
   margin-top: 100px;
   margin-bottom: 100px;
   font-family: "Khula", sans-serif;
@@ -409,13 +384,13 @@ footer h3 {
   header h1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 30xp;
   }
   .categorias h2 {
-    font-size: 30px;
+    font-size: 30xp;
   }
   .buscador h2 {
-    font-size: 30px;
+    font-size: 30xp;
   }
   .productos h3 {
     font-size: 20px;
@@ -435,7 +410,6 @@ footer h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: none;
     justify-content: space-between;
     align-items: center;
     background-image: none;

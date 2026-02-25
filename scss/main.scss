@@ -11,8 +11,9 @@
 
 /*Beneificios pag inicio/productos*/
 .beneficios {
-    @include flexbox (flex, none, none, none, center, none);
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding: nth($px, 2);
     @extend .texto-centro;
     font-family: $tipografia-general;
     border-bottom: solid;
@@ -24,20 +25,20 @@
 }
 
 .beneficios img {
-    margin-top: 20px;
+    margin-top: nth($px, 2);
     height: 35vh;
 }
 
 /*Categorias pag inicio*/
 .categorias {
     @extend .texto-centro;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: nth($px, 3);
+    padding: nth($px, 2);
 }
 
 .categorias h2 {
-    padding: 20px;
-    font-size: 50px;
+    padding: nth($px, 2);
+    font-size: nth($px, 5);
     font-family: $tipografia-titulos;
     @extend .negrita
 }
@@ -47,7 +48,7 @@
 .categorias button {
     font-size: 80%;
     padding: 8px;
-    border-radius: 20px;
+    border-radius: nth($px, 2);
 }
 
 .categorias a {
@@ -62,7 +63,7 @@
 /*servicios*/
 .servicios {
     h2 {
-        padding: 20px;
+        padding: nth($px, 2);
         @extend .texto-centro;
         font-family: $tipografia-titulos;
         border-top-style: solid;
@@ -70,15 +71,17 @@
     }
 
     div {
-        @include flexbox(flex, row, none, none, space-around, none);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         font-family: $tipografia-general;
         line-height: 2;
     }
 
     button {
         @extend .boton;
-        padding: 10px;
-        border-radius: 20px;
+        padding: nth($px, 1);
+        border-radius: nth($px, 2);
     }
 
     a {
@@ -88,8 +91,8 @@
 
     article {
         border-style: solid;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: nth($px, 2);
+        padding: nth($px, 2);
     }
 
     article :hover {
@@ -99,13 +102,13 @@
 
 /*Buscador de producto*/
 .buscador {
-    padding: 20px;
+    padding: nth($px, 2);
     @extend .texto-centro;
     font-family: $tipografia-titulos;
 
     h2 {
-        padding-bottom: 20px;
-        font-size: 50px;
+        padding-bottom: nth($px, 2);
+        font-size: nth($px, 5);
         @extend .negrita
     }
 }
@@ -113,15 +116,17 @@
 
 /*productos*/
 .productos {
-    gap: 50px;
+    gap: nth($px, 5);
     @extend .texto-centro;
-    padding: 40px;
+    padding: nth($px, 4);
     font-family: $tipografia-titulos;
-    @include flexbox (flex, none, wrap, none, space-around, none);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     article {
         width: 20rem;
-        border-radius: 20px;
+        border-radius: nth($px, 2);
         background-color: $color-logo;
     }
 
@@ -130,8 +135,8 @@
     }
 
     button {
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: nth($px, 2);
+        padding: nth($px, 1);
         @extend .boton;
         font-family: $tipografia-titulos;
 
@@ -139,19 +144,19 @@
 
     h3 {
         border-top: solid;
-        padding: 20px;
+        padding: nth($px, 2);
     }
 
     p {
         border-style: solid;
-        padding: 10px;
+        padding: nth($px, 1);
         @extend .negrita
     }
 
     img {
         width: 100%;
         height: 45vh;
-        border-radius: 20px;
+        border-radius: nth($px, 2);
     }
 }
 
@@ -160,28 +165,31 @@
     @extend .texto-centro;
     border-color: black;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: nth($px, 2);
     display: inline-table;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin-bottom: nth($px, 3);
+    margin-left: nth($px, 2);
     padding: 5px;
-    font-size: 10px;
+    font-size: nth($px, 1);
     font-family: $tipografia-general;
 }
 
 /*Quienes somos*/
 .quienessomos {
-    padding: 40px;
+    padding: nth($px, 4);
     background-image: url(../assets/imagen-apple.png);
     background-position: center;
-    @include flexbox (flex, none, nowrap, none, space-between, center);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 
     h2 {
         writing-mode: horizontal-tb;
         white-space: nowrap;
         text-orientation: sideways;
-        margin-left: 20px;
-        margin-right: 50px;
+        margin-left: nth($px, 2);
+        margin-right: nth($px, 5);
         font-family: $tipografia-titulos;
     }
 
@@ -193,8 +201,8 @@
     }
 
     img {
-        margin-top: 50px;
-        margin-left: 50px;
+        margin-top: nth($px, 5);
+        margin-left: nth($px, 5);
         width: 100%;
         height: 30vh;
     }
@@ -203,26 +211,29 @@
 /*Equipo*/
 .conoce {
     @extend .texto-centro;
-    margin-bottom: 70px;
+    margin-bottom: nth($px, 6);
     border-style: groove;
     border-bottom: none;
-    padding-top: 40px;
+    padding-top: nth($px, 2);
     font-family: $tipografia-titulos;
     @extend .negrita
 }
 
 .equipo {
-    margin-bottom: 50px;
+    margin-bottom: nth($px, 5);
     font-family: $tipografia-titulos;
-    @include flexbox (flex, none, none, none, space-around, none);
+    display: flex;
+    justify-content: space-around;
 
     article {
         line-height: 3;
         border-style: solid;
-        padding: 40px;
-        border-radius: 20px;
+        padding: nth($px, 4);
+        border-radius: nth($px, 2);
         background-color: $color-logo;
-        @include flexbox (flex, column, none, none, none, center);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     article :hover {
@@ -232,7 +243,7 @@
     img {
         width: 100%;
         height: 60vh;
-        margin-bottom: 20px;
+        margin-bottom: nth($px, 2);
     }
 }
 
@@ -240,19 +251,23 @@
 /*Contacto*/
 
 .pagcontac {
-    @include flexbox (flex, row, nowrap, none, space-between, stretch);
-    margin-top: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: nth($px, 2);
+    padding: nth($px, 2);
     line-height: 3;
 }
 
 .contacto {
     @extend .texto-centro;
     border-style: solid;
-    border-radius: 20px;
-    padding: 30px;
-    padding-top: 30px;
-    margin-left: 40px;
+    border-radius: nth($px, 2);
+    padding: nth($px, 4);
+    padding-top: nth($px, 3);
+    margin-left: nth($px, 4);
     line-height: 2;
 
     h2 {
@@ -269,7 +284,7 @@
         height: 30vh;
         border: solid;
         color: black;
-        border-radius: 20px;
+        border-radius: nth($px, 2);
     }
 }
 
@@ -277,10 +292,12 @@
 /*Redes*/
 .redes {
     border-style: solid;
-    border-radius: 20px;
-    padding: 30px;
-    padding-top: 30px;
-    @include flexbox (flex, column, none, none, none, center);
+    border-radius: nth($px, 2);
+    padding: nth($px, 4);
+    padding-top: nth($px, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
         font-family: $tipografia-titulos;
@@ -290,8 +307,8 @@
 
     div {
         font-family: $tipografia-general;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: nth($px, 2);
+        padding-bottom: nth($px, 2);
     }
 
     img {
@@ -303,10 +320,10 @@
 /*Mensaje*/
 .mensaje {
     @extend .redes;
-    margin-right: 40px;
+    margin-right: nth($px, 4);
 
     h2 {
-        padding-bottom: 20px;
+        padding-bottom: nth($px, 2);
         font-family: $tipografia-titulos;
         @extend .negrita
     }
@@ -325,33 +342,33 @@
 /*Preguntas frecuentes*/
 .preguntasfrecuentes {
     @extend .texto-centro;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: nth($px, 2);
+    margin-bottom: nth($px, 2);
     font-family: $tipografia-general;
     @extend .negrita
 }
 
 .pregunta {
-    margin-left: 20px;
+    margin-left: nth($px, 2);
     color: red;
     font-family: $tipografia-titulos;
     @extend .negrita;
-    margin-left: 50px;
+    margin-left: nth($px, 5);
     line-height: 2;
 }
 
 .respuesta {
-    margin-left: 20px;
+    margin-left: nth($px, 2);
     font-family: $tipografia-general;
 }
 
 .input {
     border-style: solid;
-    border-radius: 20px;
+    border-radius: nth($px, 2);
     @extend .texto-centro;
-    padding: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: nth($px, 6);
+    margin-top: nth($px, 7);
+    margin-bottom: nth($px, 7);
     font-family: $tipografia-general;
 }
 
@@ -365,25 +382,25 @@
 @media (max-width: 660px) {
     header {
         padding: 0%;
-        margin: 10px;
+        margin: nth($px, 1);
     }
 
     header h1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 30px;
+        margin-top: nth($px, 2);
+        margin-bottom: nth($px, 2);
+        font-size: nth($px, 3);
     }
 
     .categorias h2 {
-        font-size: 30px;
+        font-size: nth($px, 3);
     }
 
     .buscador h2 {
-        font-size: 30px;
+        font-size: nth($px, 3);
     }
 
     .productos h3 {
-        font-size: 20px;
+        font-size: nth($px, 2);
     }
 
     .precios {
@@ -395,32 +412,36 @@
     }
 
     .servicios article {
-        margin-bottom: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-bottom: nth($px, 2);
+        margin-right: nth($px, 2);
+        margin-left: nth($px, 2);
     }
 
     .quienessomos {
-        @include flexbox (flex, column, nowrap, none, space-between, center);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
         background-image: none;
-        padding: 20px;
+        padding: nth($px, 2);
     }
 
     .quienessomos h2 {
-        font-size: 20px;
+        font-size: nth($px, 2);
         text-align: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: nth($px, 2);
+        margin-top: nth($px, 2);
     }
 
     .quienessomos p {
         font-size: smaller;
         text-align: center;
-        padding: 20px;
+        padding: nth($px, 2);
     }
 
     .quienessomos img {
-        margin-top: 20px;
+        margin-top: nth($px, 2);
         margin-left: 0px;
         height: 40vh;
     }
@@ -430,9 +451,9 @@
     }
 
     .equipo article {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-left: nth($px, 2);
+        margin-right: nth($px, 2);
+        margin-bottom: nth($px, 2);
     }
 
     .equipo img {
@@ -446,13 +467,13 @@
     }
 
     .contacto {
-        margin-bottom: 20px;
+        margin-bottom: nth($px, 2);
         margin-left: 0px;
 
     }
 
     .redes {
-        margin-bottom: 20px;
+        margin-bottom: nth($px, 2);
     }
 
     .mensaje {
