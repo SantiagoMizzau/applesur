@@ -43,8 +43,6 @@
     @extend .negrita
 }
 
-
-
 .categorias button {
     font-size: 80%;
     padding: 8px;
@@ -57,7 +55,7 @@
 }
 
 .categorias button :active {
-    background-color: $color-logo
+    background-color: $color-logo;
 }
 
 /*servicios*/
@@ -96,7 +94,7 @@
     }
 
     article :hover {
-        @extend .negrita
+        @extend .negrita;
     }
 }
 
@@ -109,7 +107,7 @@
     h2 {
         padding-bottom: nth($px, 2);
         font-size: nth($px, 5);
-        @extend .negrita
+        @extend .negrita;
     }
 }
 
@@ -194,7 +192,6 @@
     }
 
     p {
-        font-size: larger;
         @extend .texto-centro;
         font-family: $tipografia-general;
 
@@ -340,6 +337,11 @@
 }
 
 /*Preguntas frecuentes*/
+.preguntas {
+    display: flex;
+    flex-direction: column
+}
+
 .preguntasfrecuentes {
     @extend .texto-centro;
     margin-top: nth($px, 2);
@@ -366,15 +368,26 @@
     border-style: solid;
     border-radius: nth($px, 2);
     @extend .texto-centro;
-    padding: nth($px, 6);
-    margin-top: nth($px, 7);
+    padding: nth($px, 2);
+    margin-top: nth($px, 3);
     margin-bottom: nth($px, 7);
     font-family: $tipografia-general;
 }
 
 .enviar {
-    background-color: rgba(84, 106, 123);
+    background-color: $fondo-botones;
     color: white;
+}
+
+.pregunfrecu {
+    display: flex;
+
+    img {
+        width: 30%;
+        height: 30rem;
+        border-radius: nth($px, 2);
+        margin-left: nth($px, 2);
+    }
 }
 
 /*Adaptacion responsive*/
@@ -478,6 +491,14 @@
 
     .mensaje {
         margin-right: 0px;
+    }
+
+    .pregunfrecu {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
     }
 
     footer {

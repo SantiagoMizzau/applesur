@@ -10,7 +10,7 @@ body {
 /*Encabezado*/
 header {
     font-style: initial;
-    padding: 20px;
+    padding: nth($px, 2);
     align-items: center;
 }
 
@@ -20,14 +20,14 @@ header a {
 }
 
 header h1 {
-    font-size: 70px;
-    padding-left: 20px;
+    font-size: nth($px, 6);
+    padding-left: nth($px, 2);
 }
 
 header nav {
     font-family: $tipografia-header-footer;
     background-color: $color-logo;
-    border-radius: 20px;
+    border-radius: nth($px, 2);
 }
 
 main img {
@@ -37,17 +37,17 @@ main img {
 header ul {
     border-style: solid;
     border-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    padding: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+    border-radius: nth($px, 2);
+    padding: nth($px, 2);
+    margin-right: nth($px, 2);
+    margin-bottom: nth($px, 5);
 }
 
 /*pie de pagina*/
 footer {
-    margin-top: 30px;
-    background-color: rgba(165, 164, 164, 0.816);
-    padding: 30px;
+    margin-top: nth($px, 3);
+    background-color: rgba(202, 202, 202, 0.816);
+    padding: nth($px, 4);
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -56,16 +56,15 @@ footer {
     font-family: $tipografia-header-footer;
     border-top: solid;
 
-}
-
-footer h3 {
-    @extend .texto-centro;
-    line-height: 2;
+    h3 {
+        @extend .texto-centro;
+        line-height: 2;
+    }
 }
 
 .apps {
     display: flex;
-    gap: 20px;
+    gap: nth($px, 2);
 
     img {
         width: 100%;

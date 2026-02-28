@@ -52,9 +52,9 @@ header ul {
 
 /*pie de pagina*/
 footer {
-  margin-top: 30px;
-  background-color: rgba(165, 164, 164, 0.816);
-  padding: 30px;
+  margin-top: 30xp;
+  background-color: rgba(202, 202, 202, 0.816);
+  padding: 40px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -63,7 +63,6 @@ footer {
   font-family: "Oswald", sans-serif;
   border-top: solid;
 }
-
 footer h3 {
   line-height: 2;
 }
@@ -225,7 +224,6 @@ footer h3 {
   font-family: "Kameron", serif;
 }
 .quienessomos p {
-  font-size: larger;
   font-family: "Khula", sans-serif;
 }
 .quienessomos img {
@@ -342,6 +340,11 @@ footer h3 {
 }
 
 /*Preguntas frecuentes*/
+.preguntas {
+  display: flex;
+  flex-direction: column;
+}
+
 .preguntasfrecuentes {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -364,8 +367,8 @@ footer h3 {
 .input {
   border-style: solid;
   border-radius: 20px;
-  padding: 70px;
-  margin-top: 100px;
+  padding: 20px;
+  margin-top: 30xp;
   margin-bottom: 100px;
   font-family: "Khula", sans-serif;
 }
@@ -373,6 +376,16 @@ footer h3 {
 .enviar {
   background-color: rgb(84, 106, 123);
   color: white;
+}
+
+.pregunfrecu {
+  display: flex;
+}
+.pregunfrecu img {
+  width: 30%;
+  height: 30rem;
+  border-radius: 20px;
+  margin-left: 20px;
 }
 
 /*Adaptacion responsive*/
@@ -456,6 +469,12 @@ footer h3 {
   }
   .mensaje {
     margin-right: 0px;
+  }
+  .pregunfrecu {
+    flex-direction: column;
+  }
+  .pregunfrecu img {
+    width: 100%;
   }
   footer {
     flex-direction: column;
