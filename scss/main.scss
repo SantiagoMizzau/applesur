@@ -370,7 +370,7 @@
     @extend .texto-centro;
     padding: nth($px, 2);
     margin-top: nth($px, 3);
-    margin-bottom: nth($px, 7);
+    margin-bottom: nth($px, 4);
     font-family: $tipografia-general;
 }
 
@@ -414,6 +414,10 @@
 
     .productos h3 {
         font-size: nth($px, 2);
+    }
+
+    .productos img {
+        height: 20rem;
     }
 
     .precios {
@@ -497,7 +501,8 @@
         flex-direction: column;
 
         img {
-            width: 100%;
+            width: 90%;
+            height: 25rem;
         }
     }
 

@@ -52,7 +52,7 @@ header ul {
 
 /*pie de pagina*/
 footer {
-  margin-top: 30xp;
+  margin-top: 30px;
   background-color: rgba(202, 202, 202, 0.816);
   padding: 40px;
   display: flex;
@@ -98,7 +98,7 @@ footer h3 {
 
 /*Categorias pag inicio*/
 .categorias {
-  margin-bottom: 30xp;
+  margin-bottom: 30px;
   padding: 20px;
 }
 
@@ -198,7 +198,7 @@ footer h3 {
   border-style: solid;
   border-radius: 20px;
   display: inline-table;
-  margin-bottom: 30xp;
+  margin-bottom: 30px;
   margin-left: 20px;
   padding: 5px;
   font-size: 10px;
@@ -280,7 +280,7 @@ footer h3 {
   border-style: solid;
   border-radius: 20px;
   padding: 40px;
-  padding-top: 30xp;
+  padding-top: 30px;
   margin-left: 40px;
   line-height: 2;
 }
@@ -303,7 +303,7 @@ footer h3 {
   border-style: solid;
   border-radius: 20px;
   padding: 40px;
-  padding-top: 30xp;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,8 +368,8 @@ footer h3 {
   border-style: solid;
   border-radius: 20px;
   padding: 20px;
-  margin-top: 30xp;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   font-family: "Khula", sans-serif;
 }
 
@@ -397,16 +397,19 @@ footer h3 {
   header h1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 30xp;
+    font-size: 30px;
   }
   .categorias h2 {
-    font-size: 30xp;
+    font-size: 30px;
   }
   .buscador h2 {
-    font-size: 30xp;
+    font-size: 30px;
   }
   .productos h3 {
     font-size: 20px;
+  }
+  .productos img {
+    height: 20rem;
   }
   .precios {
     font-size: 15px;
@@ -474,7 +477,8 @@ footer h3 {
     flex-direction: column;
   }
   .pregunfrecu img {
-    width: 100%;
+    width: 90%;
+    height: 25rem;
   }
   footer {
     flex-direction: column;
