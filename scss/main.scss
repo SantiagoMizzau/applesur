@@ -11,22 +11,9 @@
 
 /*Beneificios pag inicio/productos*/
 .beneficios {
-    display: flex;
-    justify-content: center;
-    padding: nth($px, 2);
-    @extend .texto-centro;
-    font-family: $tipografia-general;
+    margin-top: nth($px, 2);
     border-bottom: solid;
     border-top: solid;
-}
-
-.beneficios h3 {
-    @extend .negrita
-}
-
-.beneficios img {
-    margin-top: nth($px, 2);
-    height: 35vh;
 }
 
 /*Categorias pag inicio*/
@@ -99,6 +86,7 @@
 }
 
 /*Buscador de producto*/
+
 .buscador {
     padding: nth($px, 2);
     @extend .texto-centro;
@@ -108,6 +96,12 @@
         padding-bottom: nth($px, 2);
         font-size: nth($px, 5);
         @extend .negrita;
+    }
+
+    .busc-filtro {
+        display: flex;
+        justify-content: center;
+        gap: nth($px, 1);
     }
 }
 
@@ -125,7 +119,7 @@
     article {
         width: 20rem;
         border-radius: nth($px, 2);
-        background-color: $color-logo;
+        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 30%, rgba(247, 249, 249, 1) 40%);
     }
 
     article :hover {
@@ -156,20 +150,6 @@
         height: 45vh;
         border-radius: nth($px, 2);
     }
-}
-
-/*Filtro de productos*/
-.filtro {
-    @extend .texto-centro;
-    border-color: black;
-    border-style: solid;
-    border-radius: nth($px, 2);
-    display: inline-table;
-    margin-bottom: nth($px, 3);
-    margin-left: nth($px, 2);
-    padding: 5px;
-    font-size: nth($px, 1);
-    font-family: $tipografia-general;
 }
 
 /*Quienes somos*/
@@ -251,11 +231,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     margin-top: nth($px, 2);
     padding: nth($px, 2);
-    line-height: 3;
+    line-height: 2;
 }
 
 .contacto {
@@ -264,7 +244,6 @@
     border-radius: nth($px, 2);
     padding: nth($px, 4);
     padding-top: nth($px, 3);
-    margin-left: nth($px, 4);
     line-height: 2;
 
     h2 {
@@ -285,39 +264,14 @@
     }
 }
 
-
-/*Redes*/
-.redes {
+/*Mensaje*/
+.mensaje {
     border-style: solid;
     border-radius: nth($px, 2);
     padding: nth($px, 4);
-    padding-top: nth($px, 3);
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h2 {
-        font-family: $tipografia-titulos;
-        @extend .texto-centro;
-        @extend .negrita
-    }
-
-    div {
-        font-family: $tipografia-general;
-        padding-top: nth($px, 2);
-        padding-bottom: nth($px, 2);
-    }
-
-    img {
-        width: 100%;
-        height: 20vh;
-    }
-}
-
-/*Mensaje*/
-.mensaje {
-    @extend .redes;
-    margin-right: nth($px, 4);
 
     h2 {
         padding-bottom: nth($px, 2);
@@ -336,11 +290,48 @@
     color: white;
 }
 
+/*Redes*/
+.redes {
+    border-style: solid;
+    border-radius: nth($px, 2);
+    padding: nth($px, 2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: nth($px, 5);
+
+    h2 {
+        font-family: $tipografia-titulos;
+        @extend .texto-centro;
+        @extend .negrita
+    }
+
+    img {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+
+
 /*Preguntas frecuentes*/
 .preguntas {
     display: flex;
     flex-direction: column
 }
+
+.pregunfrecu {
+    display: flex;
+
+    img {
+        width: 30%;
+        height: 30rem;
+        border-radius: nth($px, 2);
+        margin-left: nth($px, 2);
+    }
+}
+
 
 .preguntasfrecuentes {
     @extend .texto-centro;
@@ -374,21 +365,7 @@
     font-family: $tipografia-general;
 }
 
-.enviar {
-    background-color: $fondo-botones;
-    color: white;
-}
 
-.pregunfrecu {
-    display: flex;
-
-    img {
-        width: 30%;
-        height: 30rem;
-        border-radius: nth($px, 2);
-        margin-left: nth($px, 2);
-    }
-}
 
 /*Adaptacion responsive*/
 
@@ -404,6 +381,10 @@
         font-size: nth($px, 3);
     }
 
+    .beneficios img {
+        height: 6rem;
+    }
+
     .categorias h2 {
         font-size: nth($px, 3);
     }
@@ -411,6 +392,11 @@
     .buscador h2 {
         font-size: nth($px, 3);
     }
+
+    .busc-filtro {
+        flex-direction: column;
+    }
+
 
     .productos h3 {
         font-size: nth($px, 2);
@@ -435,9 +421,7 @@
     }
 
     .quienessomos {
-        display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         background-image: none;
@@ -491,6 +475,7 @@
 
     .redes {
         margin-bottom: nth($px, 2);
+        flex-direction: column;
     }
 
     .mensaje {

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kameron:wght@400..700&family=Khula:wght@300;400;600;700;800&display=swap&family=Oswald:wght@200..700&display=swap");
-.negrita, .beneficios h3, .categorias h2, .servicios h2, .servicios article :hover, .buscador h2, .productos article :hover, .productos p, .conoce, .equipo article :hover, .contacto h2, .redes h2, .mensaje h2, .preguntasfrecuentes, .pregunta {
+.negrita, .categorias h2, .servicios h2, .servicios article :hover, .buscador h2, .productos article :hover, .productos p, .conoce, .equipo article :hover, .contacto h2, .mensaje h2, .redes h2, .preguntasfrecuentes, .pregunta {
   font-weight: bold;
 }
 
-.texto-centro, .beneficios, .categorias, .servicios h2, .buscador, .productos, .filtro, .quienessomos p, .conoce, .contacto, .redes h2, .mensaje h2, .preguntasfrecuentes, .input, footer h3 {
+.texto-centro, .categorias, .servicios h2, .buscador, .productos, .quienessomos p, .conoce, .contacto, .redes h2, .preguntasfrecuentes, .input, footer h3 {
   text-align: center;
 }
 
@@ -33,7 +33,7 @@ header h1 {
 
 header nav {
   font-family: "Oswald", sans-serif;
-  background-color: rgb(193, 238, 255);
+  background: linear-gradient(90deg, rgb(193, 238, 255) 65%, rgb(247, 249, 249) 85%);
   border-radius: 20px;
 }
 
@@ -46,7 +46,6 @@ header ul {
   border-color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 20px;
-  margin-right: 20px;
   margin-bottom: 50px;
 }
 
@@ -83,17 +82,9 @@ footer h3 {
 
 /*Beneificios pag inicio/productos*/
 .beneficios {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  font-family: "Khula", sans-serif;
+  margin-top: 20px;
   border-bottom: solid;
   border-top: solid;
-}
-
-.beneficios img {
-  margin-top: 20px;
-  height: 35vh;
 }
 
 /*Categorias pag inicio*/
@@ -158,6 +149,11 @@ footer h3 {
   padding-bottom: 20px;
   font-size: 50px;
 }
+.buscador .busc-filtro {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
 /*productos*/
 .productos {
@@ -171,7 +167,7 @@ footer h3 {
 .productos article {
   width: 20rem;
   border-radius: 20px;
-  background-color: rgb(193, 238, 255);
+  background: linear-gradient(0deg, rgb(193, 238, 255) 30%, rgb(247, 249, 249) 40%);
 }
 .productos button {
   border-radius: 20px;
@@ -190,19 +186,6 @@ footer h3 {
   width: 100%;
   height: 45vh;
   border-radius: 20px;
-}
-
-/*Filtro de productos*/
-.filtro {
-  border-color: black;
-  border-style: solid;
-  border-radius: 20px;
-  display: inline-table;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  padding: 5px;
-  font-size: 10px;
-  font-family: "Khula", sans-serif;
 }
 
 /*Quienes somos*/
@@ -269,11 +252,11 @@ footer h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   margin-top: 20px;
   padding: 20px;
-  line-height: 3;
+  line-height: 2;
 }
 
 .contacto {
@@ -281,7 +264,6 @@ footer h3 {
   border-radius: 20px;
   padding: 40px;
   padding-top: 30px;
-  margin-left: 40px;
   line-height: 2;
 }
 .contacto h2 {
@@ -298,32 +280,14 @@ footer h3 {
   border-radius: 20px;
 }
 
-/*Redes*/
-.redes, .mensaje {
+/*Mensaje*/
+.mensaje {
   border-style: solid;
   border-radius: 20px;
   padding: 40px;
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.redes h2, .mensaje h2 {
-  font-family: "Kameron", serif;
-}
-.redes div, .mensaje div {
-  font-family: "Khula", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.redes img, .mensaje img {
-  width: 100%;
-  height: 20vh;
-}
-
-/*Mensaje*/
-.mensaje {
-  margin-right: 40px;
 }
 .mensaje h2 {
   padding-bottom: 20px;
@@ -339,10 +303,39 @@ footer h3 {
   color: white;
 }
 
+/*Redes*/
+.redes {
+  border-style: solid;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px;
+}
+.redes h2 {
+  font-family: "Kameron", serif;
+}
+.redes img {
+  width: 100%;
+  height: 20vh;
+}
+
 /*Preguntas frecuentes*/
 .preguntas {
   display: flex;
   flex-direction: column;
+}
+
+.pregunfrecu {
+  display: flex;
+}
+.pregunfrecu img {
+  width: 30%;
+  height: 30rem;
+  border-radius: 20px;
+  margin-left: 20px;
 }
 
 .preguntasfrecuentes {
@@ -373,21 +366,6 @@ footer h3 {
   font-family: "Khula", sans-serif;
 }
 
-.enviar {
-  background-color: rgb(84, 106, 123);
-  color: white;
-}
-
-.pregunfrecu {
-  display: flex;
-}
-.pregunfrecu img {
-  width: 30%;
-  height: 30rem;
-  border-radius: 20px;
-  margin-left: 20px;
-}
-
 /*Adaptacion responsive*/
 @media (max-width: 660px) {
   header {
@@ -399,11 +377,17 @@ footer h3 {
     margin-bottom: 20px;
     font-size: 30px;
   }
+  .beneficios img {
+    height: 6rem;
+  }
   .categorias h2 {
     font-size: 30px;
   }
   .buscador h2 {
     font-size: 30px;
+  }
+  .busc-filtro {
+    flex-direction: column;
   }
   .productos h3 {
     font-size: 20px;
@@ -423,9 +407,7 @@ footer h3 {
     margin-left: 20px;
   }
   .quienessomos {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     background-image: none;
@@ -467,8 +449,9 @@ footer h3 {
     margin-bottom: 20px;
     margin-left: 0px;
   }
-  .redes, .mensaje {
+  .redes {
     margin-bottom: 20px;
+    flex-direction: column;
   }
   .mensaje {
     margin-right: 0px;

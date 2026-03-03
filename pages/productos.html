@@ -41,9 +41,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ayuda.html">Ayuda</a>
                         </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-danger">Carrito de compras</button>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -54,60 +52,68 @@
         <!--Beneficios -->
 
         <section class="beneficios">
-            <div id="carouselExample2" class="carousel slide">
-                <article class="carousel-inner">
-                    <article class="carousel-item active">
-                        <h3>Envios a todo el pais</h3>
-                        <img src="../assets/envios.png" class="d-block w-100" alt="icono de envios a todo el pais">
-                    </article>
-                    <article class="carousel-item">
-                        <h3>Plan de cuotas</h3>
-                        <img src="../assets/tarjetacredito.png" class="d-block w-100" alt="tarjeta de credito">
-                    </article>
-                    <article class="carousel-item">
-                        <h3>Descuentos</h3>
-                        <img src="../assets/descuento.png" class="d-block w-100" alt="descuentos">
-                    </article>
-                </article>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div id="carouselExampleIndicators2" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrusel">
+                        <img src="../assets/tarjetacredito.png" class="d-block w-100" alt="imagen plan de cuotas">
+                    </div>
+                    <div class="carousel-item carrusel">
+                        <img src="../assets/envios.png" class="d-block w-100" alt="imagen envios a todo el pais">
+                    </div>
+                    <div class="carousel-item carrusel">
+                        <img src="../assets/descuento.png" class="d-block w-100" alt="imagen descuentos ">
+                    </div>
+                </div>
             </div>
         </section>
         <section>
             <!--Busqueda de productos -->
+
             <div class="buscador">
                 <h2>Productos</h2>
-                <label for="producto">Busque su producto:</label>
-                <input class="rounded p-1" type="">
-            </div>
-            <!--Filtro de productos -->
-            <div class="filtro">
-                <h4>FILTRO</h4>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-                    <label class="form-check-label" for="switchCheckDefault">Precio mas alto al mas bajo</label>
+                <div class="busc-filtro">
+                    <label for="producto">Busque su producto:</label>
+                    <input class="rounded p-1" type="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            FILTRO
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="switchCheckDefault">
+                                    <label class="form-check-label" for="switchCheckDefault">Precio mas alto al mas
+                                        bajo</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="switchCheckChecked" checked>
+                                    <label class="form-check-label" for="switchCheckChecked">Precio mas bajo al mas
+                                        alto</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="switchCheckChecked" checked>
+                                    <label class="form-check-label" for="switchCheckChecked">Mas populares</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                    <label class="form-check-label" for="switchCheckChecked">Precio mas bajo al mas alto</label>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                    <label class="form-check-label" for="switchCheckChecked">Mas populares</label>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                    <label class="form-check-label" for="switchCheckChecked">Mas recientes</label>
-                </div>
-            </div>
         </section>
         <section>
             <!--Productos -->
@@ -199,7 +205,7 @@
                 <h3>Suscribite</h3>
                 <label for="">Introduzca su email:
                     <input type="text">
-                    <input type="submit">
+                    <button type="submit" class="btn boton">Enviar</button>
                 </label>
             </form>
         </footer>

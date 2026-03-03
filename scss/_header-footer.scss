@@ -26,7 +26,7 @@ header h1 {
 
 header nav {
     font-family: $tipografia-header-footer;
-    background-color: $color-logo;
+    background: linear-gradient(90deg, $color-logo 65%, $fondo 85%);
     border-radius: nth($px, 2);
 }
 
@@ -39,7 +39,6 @@ header ul {
     border-color: rgb(0, 0, 0);
     border-radius: nth($px, 2);
     padding: nth($px, 2);
-    margin-right: nth($px, 2);
     margin-bottom: nth($px, 5);
 }
 

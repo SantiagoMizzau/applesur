@@ -39,9 +39,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
                         </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-danger">Carrito de compras</button>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -55,31 +52,26 @@
         </section>
         <!--Beneficios y caracteristicas-->
         <section class=" beneficios">
-            <div id="carouselExample" class="carousel slide">
-                <article class="carousel-inner">
-                    <article class="carousel-item active">
-                        <h3>Envios a todo el pais</h3>
-                        <img src="assets/envios.png" class="d-block w-100" alt="icono de envios a todo el pais">
-                    </article>
-                    <article class="carousel-item ">
-                        <h3>Plan de cuotas</h3>
-                        <img src="assets/tarjetacredito.png" class="d-block w-100" alt="tarjeta de credito">
-                    </article>
-                    <article class="carousel-item">
-                        <h3>Descuentos</h3>
-                        <img src="assets/descuento.png" class="d-block w-100" alt="descuentos">
-                    </article>
-                </article>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrusel">
+                        <img src="assets/tarjetacredito.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item carrusel">
+                        <img src="assets/envios.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item carrusel">
+                        <img src="assets/descuento.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
         </section>
         <!--Categorias de productos -->
@@ -153,6 +145,9 @@
             </div>
         </section>
 
+
+
+
     </main>
     <!--Pie de pagina-->
     <footer>
@@ -175,7 +170,7 @@
             <h3>Suscribite</h3>
             <label for="">Introduzca su email:
                 <input type="text">
-                <input type="submit">
+                <button type="submit" class="btn boton">Enviar</button>
             </label>
         </form>
         </div>

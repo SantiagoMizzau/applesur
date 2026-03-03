@@ -42,26 +42,46 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ayuda.html">Ayuda</a>
                         </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-danger">Carrito de compras</button>
-                        </li>
+
                     </ul>
                 </div>
             </div>
 
         </nav>
     </header>
-    <main class="pagcontac">
-        <section class="contacto">
-            <!--Datos de contacto -->
-            <h2>Datos de contacto</h2>
-            <p>Email:Applesur@gmail.com</p>
-            <p>Tel:+54 011 22463107</p>
-            <p>Direccion:</p>
+    <main>
+        <div class="pagcontac">
+            <section class="contacto">
+                <!--Datos de contacto -->
+                <h2>Datos de contacto</h2>
+                <p>Email:Applesur@gmail.com</p>
+                <p>Tel:+54 011 22463107</p>
+                <p>Direccion:</p>
 
-            <p><a href="https://maps.app.goo.gl/ZEJ5YbuAfqUtdtAt9"><img src="../assets/ubi.png"
-                        alt="Ubicacion de apple sur en goggle maps"></a></p>
-        </section>
+                <p><a href="https://maps.app.goo.gl/ZEJ5YbuAfqUtdtAt9"><img src="../assets/ubi.png"
+                            alt="Ubicacion de apple sur en goggle maps"></a></p>
+            </section>
+            <!--Formulario de info -->
+            <section class="mensaje">
+                <h2>Mensaje</h2>
+                <form class="formulario">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">No volveremos a compartirlo con nadie</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn boton">Enviar</button>
+                </form>
+            </section>
+        </div>
         <!--Redes sociales -->
         <section class="redes">
             <h2>Redes sociales</h2>
@@ -78,26 +98,7 @@
                         alt="logo de faccebook"></a>
             </div>
         </section>
-        <section class="mensaje">
-            <!--Formulario de info -->
-            <h2>Mensaje</h2>
-            <form class="formulario">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">No volveremos a compartirlo con nadie</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-                </div>
-                <button type="submit" class="btn boton">Enviar</button>
-            </form>
-        </section>
+
     </main>
     <!--Pie de pagina -->
     <footer>
@@ -120,7 +121,7 @@
             <h3>Suscribite</h3>
             <label for="">Introduzca su email:
                 <input type="text">
-                <input type="submit">
+                <button type="submit" class="btn boton">Enviar</button>
             </label>
         </form>
     </footer>
