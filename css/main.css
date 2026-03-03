@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kameron:wght@400..700&family=Khula:wght@300;400;600;700;800&display=swap&family=Oswald:wght@200..700&display=swap");
-.negrita, .categorias h2, .servicios h2, .servicios article :hover, .buscador h2, .productos article :hover, .productos p, .conoce, .equipo article :hover, .contacto h2, .mensaje h2, .redes h2, .preguntasfrecuentes, .pregunta {
+.negrita, .categorias h2, .servicios h2, .servicios article :hover, .buscador h2, .productos article :hover, .productos p, .quienessomos p, .conoce, .equipo article :hover, .contacto h2, .mensaje h2, .redes h2, .preguntasfrecuentes, .pregunta {
   font-weight: bold;
 }
 
@@ -33,7 +33,7 @@ header h1 {
 
 header nav {
   font-family: "Oswald", sans-serif;
-  background: linear-gradient(90deg, rgb(193, 238, 255) 65%, rgb(247, 249, 249) 85%);
+  background: linear-gradient(90deg, rgb(193, 238, 255) 55%, rgb(247, 249, 249) 85%);
   border-radius: 20px;
 }
 
@@ -47,6 +47,10 @@ header ul {
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 50px;
+}
+
+header li {
+  color: white;
 }
 
 /*pie de pagina*/
@@ -80,6 +84,10 @@ footer h3 {
   padding: 0;
 }
 
+body {
+  font-family: "Khula", sans-serif;
+}
+
 /*Beneificios pag inicio/productos*/
 .beneficios {
   margin-top: 20px;
@@ -101,12 +109,11 @@ footer h3 {
 
 .categorias button {
   font-size: 80%;
-  padding: 8px;
   border-radius: 20px;
 }
 
 .categorias a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -124,11 +131,9 @@ footer h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: "Khula", sans-serif;
   line-height: 2;
 }
 .servicios button {
-  padding: 10px;
   border-radius: 20px;
 }
 .servicios a {
@@ -149,10 +154,11 @@ footer h3 {
   padding-bottom: 20px;
   font-size: 50px;
 }
-.buscador .busc-filtro {
+
+.filtro {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
 /*productos*/
@@ -167,12 +173,11 @@ footer h3 {
 .productos article {
   width: 20rem;
   border-radius: 20px;
-  background: linear-gradient(0deg, rgb(193, 238, 255) 30%, rgb(247, 249, 249) 40%);
+  background: linear-gradient(0deg, rgb(193, 238, 255) 40%, white 45%);
 }
 .productos button {
-  border-radius: 20px;
-  padding: 10px;
   font-family: "Kameron", serif;
+  border-radius: 20px;
 }
 .productos h3 {
   border-top: solid;
@@ -206,9 +211,6 @@ footer h3 {
   margin-right: 50px;
   font-family: "Kameron", serif;
 }
-.quienessomos p {
-  font-family: "Khula", sans-serif;
-}
 .quienessomos img {
   margin-top: 50px;
   margin-left: 50px;
@@ -236,7 +238,7 @@ footer h3 {
   border-style: solid;
   padding: 40px;
   border-radius: 20px;
-  background-color: rgb(193, 238, 255);
+  background: rgb(193, 238, 255);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -269,9 +271,6 @@ footer h3 {
 .contacto h2 {
   font-family: "Kameron", serif;
 }
-.contacto p {
-  font-family: "Khula", sans-serif;
-}
 .contacto img {
   width: 100%;
   height: 30vh;
@@ -294,13 +293,10 @@ footer h3 {
   font-family: "Kameron", serif;
 }
 
-.formulario {
-  font-family: "Khula", sans-serif;
-}
-
-.boton, .servicios button, .productos button {
+.boton, .categorias button, .servicios button, .productos button {
   background-color: rgb(84, 106, 123);
   color: white;
+  padding: 10px;
 }
 
 /*Redes*/
@@ -341,7 +337,6 @@ footer h3 {
 .preguntasfrecuentes {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Khula", sans-serif;
 }
 
 .pregunta {
@@ -354,16 +349,13 @@ footer h3 {
 
 .respuesta {
   margin-left: 20px;
-  font-family: "Khula", sans-serif;
 }
 
 .input {
   border-style: solid;
   border-radius: 20px;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  font-family: "Khula", sans-serif;
+  margin: 30px;
 }
 
 /*Adaptacion responsive*/
@@ -395,6 +387,9 @@ footer h3 {
   .productos img {
     height: 20rem;
   }
+  .productos article {
+    background: linear-gradient(0deg, rgb(193, 238, 255) 25%, white 45%);
+  }
   .precios {
     font-size: 15px;
   }
@@ -418,6 +413,7 @@ footer h3 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 0px;
   }
   .quienessomos p {
     font-size: smaller;
@@ -452,6 +448,12 @@ footer h3 {
   .redes {
     margin-bottom: 20px;
     flex-direction: column;
+  }
+  .input {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
   }
   .mensaje {
     margin-right: 0px;

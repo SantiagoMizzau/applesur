@@ -7,7 +7,9 @@
     padding: 0;
 }
 
-
+body {
+    font-family: $tipografia-general;
+}
 
 /*Beneificios pag inicio/productos*/
 .beneficios {
@@ -32,12 +34,12 @@
 
 .categorias button {
     font-size: 80%;
-    padding: 8px;
+    @extend .boton;
     border-radius: nth($px, 2);
 }
 
 .categorias a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -59,13 +61,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-family: $tipografia-general;
         line-height: 2;
     }
 
     button {
         @extend .boton;
-        padding: nth($px, 1);
         border-radius: nth($px, 2);
     }
 
@@ -97,14 +97,13 @@
         font-size: nth($px, 5);
         @extend .negrita;
     }
-
-    .busc-filtro {
-        display: flex;
-        justify-content: center;
-        gap: nth($px, 1);
-    }
 }
 
+.filtro {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: nth($px, 1);
+}
 
 /*productos*/
 .productos {
@@ -119,7 +118,7 @@
     article {
         width: 20rem;
         border-radius: nth($px, 2);
-        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 30%, rgba(247, 249, 249, 1) 40%);
+        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 40%, white 45%);
     }
 
     article :hover {
@@ -127,10 +126,9 @@
     }
 
     button {
-        border-radius: nth($px, 2);
-        padding: nth($px, 1);
-        @extend .boton;
         font-family: $tipografia-titulos;
+        @extend .boton;
+        border-radius: nth($px, 2);
 
     }
 
@@ -173,8 +171,7 @@
 
     p {
         @extend .texto-centro;
-        font-family: $tipografia-general;
-
+        @extend .negrita
     }
 
     img {
@@ -207,7 +204,7 @@
         border-style: solid;
         padding: nth($px, 4);
         border-radius: nth($px, 2);
-        background-color: $color-logo;
+        background: $color-logo;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -251,10 +248,6 @@
         @extend .negrita
     }
 
-    p {
-        font-family: $tipografia-general;
-    }
-
     img {
         width: 100%;
         height: 30vh;
@@ -281,13 +274,11 @@
 
 }
 
-.formulario {
-    font-family: $tipografia-general;
-}
 
 .boton {
     background-color: $fondo-botones;
     color: white;
+    padding: nth($px, 1);
 }
 
 /*Redes*/
@@ -337,8 +328,7 @@
     @extend .texto-centro;
     margin-top: nth($px, 2);
     margin-bottom: nth($px, 2);
-    font-family: $tipografia-general;
-    @extend .negrita
+    @extend .negrita;
 }
 
 .pregunta {
@@ -352,7 +342,6 @@
 
 .respuesta {
     margin-left: nth($px, 2);
-    font-family: $tipografia-general;
 }
 
 .input {
@@ -360,9 +349,7 @@
     border-radius: nth($px, 2);
     @extend .texto-centro;
     padding: nth($px, 2);
-    margin-top: nth($px, 3);
-    margin-bottom: nth($px, 4);
-    font-family: $tipografia-general;
+    margin: nth($px, 3);
 }
 
 
@@ -406,6 +393,10 @@
         height: 20rem;
     }
 
+    .productos article {
+        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 25%, white 45%)
+    }
+
     .precios {
         font-size: 15px;
     }
@@ -433,6 +424,7 @@
         text-align: center;
         margin-bottom: nth($px, 2);
         margin-top: nth($px, 2);
+        margin-right: 0px;
     }
 
     .quienessomos p {
@@ -476,6 +468,13 @@
     .redes {
         margin-bottom: nth($px, 2);
         flex-direction: column;
+    }
+
+    .input {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: nth($px, 1);
     }
 
     .mensaje {

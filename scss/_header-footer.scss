@@ -26,7 +26,7 @@ header h1 {
 
 header nav {
     font-family: $tipografia-header-footer;
-    background: linear-gradient(90deg, $color-logo 65%, $fondo 85%);
+    background: linear-gradient(90deg, $color-logo 55%, $fondo 85%);
     border-radius: nth($px, 2);
 }
 
@@ -40,6 +40,10 @@ header ul {
     border-radius: nth($px, 2);
     padding: nth($px, 2);
     margin-bottom: nth($px, 5);
+}
+
+header li {
+    color: white;
 }
 
 /*pie de pagina*/
