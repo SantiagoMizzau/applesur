@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Sur | Quienes somos</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -14,8 +15,6 @@
 <body>
     <!--Encabezado -->
     <header>
-
-
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a href="../index.html">
@@ -66,17 +65,17 @@
         <section>
             <h2 class="conoce">Conoce nuestro equipo</h2>
             <div class="equipo">
-                <article>
+                <article data-aos="zoom-in">
                     <h3>Sofía Martínez</h3>
                     <img class="rounded" src="../assets/foto trabajador 1.png" alt="foto trabajadora sofia martinez">
                     <h4>Atención al Cliente</h4>
                 </article>
-                <article>
+                <article data-aos="zoom-in">
                     <h3>Lucas Johnson</h3>
                     <img class="rounded" src="../assets/foto trabajador 2.png" alt="foto trabajador lucas jhonson">
                     <h4>Soporte Técnico</h4>
                 </article>
-                <article>
+                <article data-aos="zoom-in">
                     <h3>Valentina Rossi</h3>
                     <img class="rounded " src="../assets/foto trabajador 3.png" alt="foto trabajadora valentina rossi">
                     <h4>Fotografia</h4>
@@ -104,17 +103,25 @@
             <a href="https://x.com/Apple?s=20"><img src="../assets/x-twitter-light-blue-logo-5694248.png"
                     alt="logo de X"></a>
         </div>
-        <form action="" method="">
-            <h3>Suscribite</h3>
-            <label for="">Introduzca su email:
-                <input type="text">
+        <div>
+            <h3>Suscribite!!</h3>
+            <label for="" class="suscribite">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="e-mail" aria-label="Recipient’s username"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
                 <button type="submit" class="btn boton">Enviar</button>
             </label>
-        </form>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

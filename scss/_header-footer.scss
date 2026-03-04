@@ -10,7 +10,7 @@ body {
 /*Encabezado*/
 header {
     font-style: initial;
-    padding: nth($px, 2);
+    margin: nth($px, 2);
     align-items: center;
 }
 
@@ -63,6 +63,13 @@ footer {
         @extend .texto-centro;
         line-height: 2;
     }
+}
+
+.suscribite {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: nth($px, 1);
 }
 
 .apps {

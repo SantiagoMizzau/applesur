@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
@@ -14,7 +16,7 @@
     <!--Encabezado de pagina-->
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+            <div class=" container-fluid">
                 <a href="#">
                     <h1>Apple sur</h1>
                 </a>
@@ -46,10 +48,6 @@
         </nav>
     </header>
     <main>
-        <!--Imagen de Iphones-->
-        <section class="imggrande">
-            <a href="https://www.apple.com/"><img src="assets/iphone17.jpg" alt="imagen de iphones"></a>
-        </section>
         <!--Beneficios y caracteristicas-->
         <section class=" beneficios">
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -62,17 +60,21 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active carrusel">
-                        <img src="assets/tarjetacredito.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item active carrusel animate__animated animate__pulse">
+                        <img src="assets/tarjetacredito.png" class="d-block w-100" alt="imagen plan de cuotas">
                     </div>
-                    <div class="carousel-item carrusel">
-                        <img src="assets/envios.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item carrusel animate__animated animate__pulse">
+                        <img src="assets/envios.png" class="d-block w-100" alt="imagen envios a todo el pais">
                     </div>
-                    <div class="carousel-item carrusel">
-                        <img src="assets/descuento.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item carrusel animate__animated animate__pulse">
+                        <img src="assets/descuento.png" class="d-block w-100" alt="imagen descuentos">
                     </div>
                 </div>
             </div>
+        </section>
+        <!--Imagen de Iphones-->
+        <section class="imggrande">
+            <a href="https://www.apple.com/"><img src="assets/iphone17.jpg" alt="imagen de iphones"></a>
         </section>
         <!--Categorias de productos -->
         <section>
@@ -88,37 +90,44 @@
             <!--Productos destacados-->
             <h2 class="text-center ">Productos destacados</h2>
             <div class="productos">
-
-                <article class="card border border-secondary">
+                <article class="card border border-secondary" data-aos="flip-up">
                     <img src="assets/iphone15promax.jpg" alt="Iphone 15 pro max blanco">
                     <div class="card-body">
                         <h3 class="card-title">Iphone 15 Pro Max</h3>
-                        <p class="card-text">U$SD1200</p>
-                        <button>Comprar</button>
+                        <h4 class="card-text">U$SD1200</h4>
+                        <button>
+                            <p>Comprar</p>
+                        </button>
                     </div>
                 </article>
-                <article class="card border border-secondary">
+                <article class="card border border-secondary" data-aos="flip-up">
                     <img src="assets/iphone17promax.jpg" alt="Iphone 17 pro max naranja">
                     <div class="card-body">
                         <h3 class="card-title">Iphone 17 pro max</h3>
-                        <p class="card-text">U$SD1500</p>
-                        <button>Comprar</button>
+                        <h4 class="card-text">U$SD1500</h4>
+                        <button>
+                            <p>Comprar</p>
+                        </button>
                     </div>
                 </article>
-                <article class="card border border-secondary">
+                <article class="card border border-secondary" data-aos="flip-up">
                     <img src="assets/macbookair13.jpg" alt="Macbook Air 13">
                     <div class="card-body">
                         <h3 class="card-title">Macbook air 13""</h3>
-                        <p class="card-text">U$D2000</p>
-                        <button>Comprar</button>
+                        <h4 class="card-text">U$D2000</h4>
+                        <button>
+                            <p>Comprar</p>
+                        </button>
                     </div>
                 </article>
-                <article class="card border border-secondary">
+                <article class="card border border-secondary" data-aos="flip-up">
                     <img src="assets/aipordspro3.jpeg" alt="Airpods pro 3">
                     <div class="card-body">
                         <h3 class="card-title">Airtag Apple</h3>
-                        <p class="card-text">U$D300</p>
-                        <button>Comprar</button>
+                        <h4 class="card-text">U$D300</h4>
+                        <button>
+                            <p>Comprar</p>
+                        </button>
                     </div>
                 </article>
             </div>
@@ -127,19 +136,19 @@
         <section class="servicios">
             <h2>Servicios</h2>
             <div>
-                <article>
+                <article data-aos="flip-up">
                     <h3>Venta de productos Apple </h3>
-                    <h4>Garantia oficial de Apple</h4>
+                    <h3>Garantia oficial de Apple</h3>
                     <button><a href="pages/productos.html">Mas informacion</a></button>
                 </article>
-                <article>
+                <article data-aos="flip-up">
                     <h3>Servicio tecnico Iphones</h3>
-                    <h4>Servicio tecnico para todos los modelos</h4>
+                    <h3>Servicio tecnico para todos los modelos</h3>
                     <button><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Mas informacion</a></button>
                 </article>
-                <article>
+                <article data-aos="flip-up">
                     <h3>Plan canje</h3>
-                    <h4>Dejanos tu Iphone y llevate uno nuevo</h4>
+                    <h3>Dejanos tu Iphone y llevate uno nuevo</h3>
                     <button><a href="pages/productos.html">Mas informacion</a></button>
                 </article>
             </div>
@@ -166,18 +175,25 @@
             <a href="https://x.com/Apple?s=20"><img src="assets/x-twitter-light-blue-logo-5694248.png"
                     alt="logo de X"></a>
         </div>
-        <form action="" method="">
-            <h3>Suscribite</h3>
-            <label for="">Introduzca su email:
-                <input type="text">
+        <div>
+            <h3>Suscribite!!</h3>
+            <label for="" class="suscribite">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="e-mail" aria-label="Recipient’s username"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
                 <button type="submit" class="btn boton">Enviar</button>
             </label>
-        </form>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ body {
 
 /*Beneificios pag inicio/productos*/
 .beneficios {
-    margin-top: nth($px, 2);
+    margin-bottom: nth($px, 2);
     border-bottom: solid;
     border-top: solid;
 }
@@ -23,28 +23,29 @@ body {
     @extend .texto-centro;
     margin-bottom: nth($px, 3);
     padding: nth($px, 2);
+
+    h2 {
+        padding: nth($px, 2);
+        font-family: $tipografia-titulos;
+        font-size: nth($px, 4);
+        @extend .negrita
+    }
+
+    button {
+        font-size: nth($px, 1);
+        @extend .boton;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+    }
 }
 
-.categorias h2 {
-    padding: nth($px, 2);
-    font-size: nth($px, 5);
-    font-family: $tipografia-titulos;
-    @extend .negrita
-}
-
-.categorias button {
-    font-size: 80%;
-    @extend .boton;
-    border-radius: nth($px, 2);
-}
-
-.categorias a {
-    color: white;
-    text-decoration: none;
-}
-
-.categorias button :active {
-    background-color: $color-logo;
+button :active {
+    font-size: 12px;
 }
 
 /*servicios*/
@@ -66,22 +67,22 @@ body {
 
     button {
         @extend .boton;
-        border-radius: nth($px, 2);
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 
-    a {
-        color: white;
-        text-decoration: none;
+    button :hover {
+        @extend .negrita
     }
+
 
     article {
         border-style: solid;
         border-radius: nth($px, 2);
         padding: nth($px, 2);
-    }
-
-    article :hover {
-        @extend .negrita;
     }
 }
 
@@ -94,7 +95,6 @@ body {
 
     h2 {
         padding-bottom: nth($px, 2);
-        font-size: nth($px, 5);
         @extend .negrita;
     }
 }
@@ -102,7 +102,7 @@ body {
 .filtro {
     display: flex;
     justify-content: flex-end;
-    margin-right: nth($px, 1);
+    margin-right: nth($px, 3);
 }
 
 /*productos*/
@@ -118,35 +118,42 @@ body {
     article {
         width: 20rem;
         border-radius: nth($px, 2);
-        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 40%, white 45%);
-    }
+        background: linear-gradient(0deg, rgba(193, 238, 255, 1) 10%, white 45%);
 
-    article :hover {
-        @extend .negrita
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
     button {
-        font-family: $tipografia-titulos;
         @extend .boton;
-        border-radius: nth($px, 2);
 
+        p {
+            margin-bottom: 0rem;
+        }
+
+        :hover {
+            @extend .negrita
+        }
     }
 
     h3 {
-        border-top: solid;
         padding: nth($px, 2);
     }
 
-    p {
+    h4 {
         border-style: solid;
-        padding: nth($px, 1);
-        @extend .negrita
+        font-size: medium;
+        @extend .negrita;
+        padding: nth($px, 1)
     }
 
     img {
         width: 100%;
-        height: 45vh;
         border-radius: nth($px, 2);
+        height: 45vh;
     }
 }
 
@@ -161,9 +168,7 @@ body {
     align-items: center;
 
     h2 {
-        writing-mode: horizontal-tb;
         white-space: nowrap;
-        text-orientation: sideways;
         margin-left: nth($px, 2);
         margin-right: nth($px, 5);
         font-family: $tipografia-titulos;
@@ -186,8 +191,7 @@ body {
 .conoce {
     @extend .texto-centro;
     margin-bottom: nth($px, 6);
-    border-style: groove;
-    border-bottom: none;
+    border-top: groove;
     padding-top: nth($px, 2);
     font-family: $tipografia-titulos;
     @extend .negrita
@@ -204,7 +208,7 @@ body {
         border-style: solid;
         padding: nth($px, 4);
         border-radius: nth($px, 2);
-        background: $color-logo;
+        background: radial-gradient(circle, rgba(247, 249, 249, 1) 66%, rgba(193, 238, 255, 1) 100%);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -230,23 +234,12 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
-    margin-top: nth($px, 2);
     padding: nth($px, 2);
     line-height: 2;
 }
 
 .contacto {
-    @extend .texto-centro;
-    border-style: solid;
-    border-radius: nth($px, 2);
-    padding: nth($px, 4);
-    padding-top: nth($px, 3);
-    line-height: 2;
-
-    h2 {
-        font-family: $tipografia-titulos;
-        @extend .negrita
-    }
+    @extend .mensaje;
 
     img {
         width: 100%;
@@ -272,31 +265,22 @@ body {
         @extend .negrita
     }
 
-}
 
+}
 
 .boton {
     background-color: $fondo-botones;
     color: white;
     padding: nth($px, 1);
+    border-radius: nth($px, 2);
 }
 
 /*Redes*/
 .redes {
-    border-style: solid;
-    border-radius: nth($px, 2);
-    padding: nth($px, 2);
-    display: flex;
+    @extend .mensaje;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     margin: nth($px, 5);
-
-    h2 {
-        font-family: $tipografia-titulos;
-        @extend .texto-centro;
-        @extend .negrita
-    }
 
     img {
         width: 100%;
@@ -390,7 +374,7 @@ body {
     }
 
     .productos img {
-        height: 20rem;
+        height: 17rem;
     }
 
     .productos article {
@@ -450,8 +434,8 @@ body {
     }
 
     .equipo img {
-        height: 80vh;
-        width: 90%;
+        height: 70vh;
+        width: 80%;
     }
 
     .pagcontac {
@@ -468,6 +452,11 @@ body {
     .redes {
         margin-bottom: nth($px, 2);
         flex-direction: column;
+        margin-right: nth($px, 2);
+        padding: nth($px, 2);
+        margin: nth($px, 3);
+        align-items: center;
+
     }
 
     .input {
@@ -477,9 +466,7 @@ body {
         margin: nth($px, 1);
     }
 
-    .mensaje {
-        margin-right: 0px;
-    }
+
 
     .pregunfrecu {
         flex-direction: column;
