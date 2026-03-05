@@ -59,9 +59,9 @@ footer {
     font-family: $tipografia-header-footer;
     border-top: solid;
 
-    h3 {
+    h2 {
         @extend .texto-centro;
-        line-height: 2;
+        line-height: 1;
     }
 }
 

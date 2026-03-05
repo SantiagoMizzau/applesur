@@ -1,7 +1,6 @@
 @use "variables" as *;
 @use "header-footer" as *;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -119,6 +118,8 @@ button :active {
         width: 20rem;
         border-radius: nth($px, 2);
         background: linear-gradient(0deg, rgba(193, 238, 255, 1) 10%, white 45%);
+        border-style: solid;
+        border-color: black;
 
         div {
             display: flex;
