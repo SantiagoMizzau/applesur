@@ -317,12 +317,13 @@ button :active {
 }
 
 .pregunta {
-    margin-left: nth($px, 2);
+
     color: red;
     font-family: $tipografia-titulos;
     @extend .negrita;
     margin-left: nth($px, 5);
     line-height: 2;
+    font-size: medium;
 }
 
 .respuesta {
@@ -375,7 +376,7 @@ button :active {
     }
 
     .productos img {
-        height: 17rem;
+        height: 16rem;
     }
 
     .productos article {
@@ -462,9 +463,11 @@ button :active {
 
     .input {
         display: flex;
+        font-size: smaller;
         flex-wrap: nowrap;
         align-items: center;
         margin: nth($px, 1);
+        gap: 2px;
     }
 
 
@@ -473,8 +476,8 @@ button :active {
         flex-direction: column;
 
         img {
-            width: 90%;
-            height: 25rem;
+            width: 83%;
+            height: 18rem;
         }
     }
 

@@ -325,11 +325,11 @@ button :active {
 }
 
 .pregunta {
-  margin-left: 20px;
   color: red;
   font-family: "Kameron", serif;
   margin-left: 50px;
   line-height: 2;
+  font-size: medium;
 }
 
 .respuesta {
@@ -370,7 +370,7 @@ button :active {
     font-size: 20px;
   }
   .productos img {
-    height: 17rem;
+    height: 16rem;
   }
   .productos article {
     background: linear-gradient(0deg, rgb(193, 238, 255) 25%, white 45%);
@@ -440,16 +440,18 @@ button :active {
   }
   .input {
     display: flex;
+    font-size: smaller;
     flex-wrap: nowrap;
     align-items: center;
     margin: 10px;
+    gap: 2px;
   }
   .pregunfrecu {
     flex-direction: column;
   }
   .pregunfrecu img {
-    width: 90%;
-    height: 25rem;
+    width: 83%;
+    height: 18rem;
   }
   footer {
     flex-direction: column;
