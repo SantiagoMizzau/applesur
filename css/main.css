@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kameron:wght@400..700&family=Khula:wght@300;400;600;700;800&display=swap&family=Oswald:wght@200..700&display=swap");
-.negrita, .categorias h2, .servicios h2, .servicios button :hover, .buscador h2, .productos button :hover, .productos h4, .quienessomos p, .conoce, .equipo article :hover, .mensaje h2, .contacto h2, .redes h2, .preguntasfrecuentes, .pregunta {
+.negrita, .categorias h2, .servicios h2, .servicios button :hover, .buscador h2, .productos p, .quienessomos p, .conoce, .equipo article :hover, .mensaje h2, .contacto h2, .redes h2, .preguntasfrecuentes, .pregunta {
   font-weight: bold;
 }
 
@@ -145,6 +145,9 @@ button :active {
   border-radius: 20px;
   padding: 20px;
 }
+.servicios p {
+  font-size: larger;
+}
 
 /*Buscador de producto*/
 .buscador {
@@ -183,12 +186,18 @@ button :active {
   justify-content: space-between;
 }
 .productos button p {
-  margin-bottom: 0rem;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+.productos button :hover {
+  background-color: red;
+  border-radius: 20px;
 }
 .productos h3 {
   padding: 20px;
 }
-.productos h4 {
+.productos p {
   border-style: solid;
   font-size: medium;
   padding: 10px;
@@ -261,6 +270,10 @@ button :active {
   align-items: stretch;
   padding: 20px;
   line-height: 2;
+}
+.pagcontac h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .contacto img {

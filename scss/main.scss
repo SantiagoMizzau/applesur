@@ -83,6 +83,10 @@ button :active {
         border-radius: nth($px, 2);
         padding: nth($px, 2);
     }
+
+    p {
+        font-size: larger;
+    }
 }
 
 /*Buscador de producto*/
@@ -132,11 +136,14 @@ button :active {
         @extend .boton;
 
         p {
-            margin-bottom: 0rem;
+            border: none;
+            padding: 0px;
+            margin: 0px;
         }
 
         :hover {
-            @extend .negrita
+            background-color: red;
+            border-radius: nth($px, 2);
         }
     }
 
@@ -144,7 +151,7 @@ button :active {
         padding: nth($px, 2);
     }
 
-    h4 {
+    p {
         border-style: solid;
         font-size: medium;
         @extend .negrita;
@@ -237,6 +244,11 @@ button :active {
     align-items: stretch;
     padding: nth($px, 2);
     line-height: 2;
+
+    h3 {
+        font-size: nth($px, 2);
+        margin-bottom: 0px
+    }
 }
 
 .contacto {
