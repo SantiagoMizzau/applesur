@@ -86,6 +86,7 @@ button :active {
 
     p {
         font-size: larger;
+        margin-bottom: 0rem;
     }
 }
 
@@ -100,11 +101,21 @@ button :active {
         padding-bottom: nth($px, 2);
         @extend .negrita;
     }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        input {
+            border-radius: nth($px, 2);
+            padding: nth($px, 1);
+        }
+    }
 }
 
 .filtro {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: nth($px, 3);
 }
 
@@ -246,8 +257,13 @@ button :active {
     line-height: 2;
 
     h3 {
-        font-size: nth($px, 2);
+        font-size: medium;
         margin-bottom: 0px
+    }
+
+    a {
+        color: black;
+        text-decoration: none
     }
 }
 
@@ -260,6 +276,7 @@ button :active {
         border: solid;
         color: black;
         border-radius: nth($px, 2);
+        margin-top: nth($px, 1);
     }
 }
 

@@ -147,6 +147,7 @@ button :active {
 }
 .servicios p {
   font-size: larger;
+  margin-bottom: 0rem;
 }
 
 /*Buscador de producto*/
@@ -157,10 +158,18 @@ button :active {
 .buscador h2 {
   padding-bottom: 20px;
 }
+.buscador form {
+  display: flex;
+  justify-content: center;
+}
+.buscador form input {
+  border-radius: 20px;
+  padding: 10px;
+}
 
 .filtro {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-right: 30px;
 }
 
@@ -272,8 +281,12 @@ button :active {
   line-height: 2;
 }
 .pagcontac h3 {
-  font-size: 20px;
+  font-size: medium;
   margin-bottom: 0px;
+}
+.pagcontac a {
+  color: black;
+  text-decoration: none;
 }
 
 .contacto img {
@@ -282,6 +295,7 @@ button :active {
   border: solid;
   color: black;
   border-radius: 20px;
+  margin-top: 10px;
 }
 
 /*Mensaje*/
