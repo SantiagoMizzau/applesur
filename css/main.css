@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kameron:wght@400..700&family=Khula:wght@300;400;600;700;800&display=swap&family=Oswald:wght@200..700&display=swap");
-.negrita, .categorias h2, .servicios h2, .servicios button :hover, .buscador h2, .productos p, .quienessomos p, .conoce, .equipo article :hover, .mensaje h2, .contacto h2, .redes h2, .preguntasfrecuentes, .pregunta {
+.negrita, .categorias h2, .servicios h2, .servicios button :hover, .buscador h2, .productos p, .quienessomos p, .conoce, .equipo article :hover, .mensaje h2 h2, .contacto h2 h2, .redes h2 h2, .redes h2, .preguntasfrecuentes, .pregunta {
   font-weight: bold;
 }
 
@@ -307,7 +307,8 @@ button :active {
   flex-direction: column;
   align-items: center;
 }
-.mensaje h2, .redes h2, .contacto h2 {
+
+.mensaje h2 h2, .redes h2 h2, .contacto h2 h2 {
   padding-bottom: 20px;
   font-family: "Kameron", serif;
 }
@@ -329,6 +330,7 @@ button :active {
 }
 .redes h2 {
   font-size: 30px;
+  font-family: "Kameron", serif;
 }
 .redes img {
   width: 95%;

@@ -288,16 +288,15 @@ button :active {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.mensaje h2{
     h2 {
         padding-bottom: nth($px, 2);
         font-family: $tipografia-titulos;
         @extend .negrita
     }
-
-
 }
-
 .boton {
     background-color: $fondo-botones;
     color: white;
@@ -313,8 +312,11 @@ button :active {
     margin: nth($px, 5);
     margin-left:15%;
     margin-right:15% ;
+
     h2{
         font-size: nth($px,3s);
+        @extend .negrita;
+        font-family: $tipografia-titulos;
     }
 
     img {
